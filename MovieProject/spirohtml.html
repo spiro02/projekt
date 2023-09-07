@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Movie Rate</title>
+    <link rel="stylesheet" href="spirocss.css" />
+</head>
+<body>
+
+    <form id="votimi-form">
+            <div class="qender">
+                <h1>"The Sea Beast" Movie Rating</h1>    
+                <div class="horizont">
+                    <div class="labelat">
+                        <label for="emri">FirstName:</label>
+                    </div>
+                    <div class="inputet">
+                        <input type="text" id="emri" required>
+                    </div>
+                </div>
+
+                <div class="horizont">
+                    <div class="labelat">
+                        <label for="mbiemri">LastName:</label>
+                    </div>
+                    <div class="inputet">
+                        <input type="text" id="mbiemri" required>
+                    </div>
+                </div>
+
+                <div class="horizont">
+                    <div class="labelat">
+                        <label for="shteti">Country:</label>
+                    </div>
+                    <div class="inputet">
+                        <select id="shteti" required>
+                            <option value="Albania">Albania</option>
+                            <option value="Kosovo">Kosovo</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Greecce">Greece</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="horizont">
+                    <div class="labelat">
+                        <label>Gender:</label>
+                    </div>
+                    <div class="inputet">
+                        <input type="radio" id="mashkull" name="gjinia" value="Mashkull" required>
+                        <label for="mashkull">Male</label>
+                    </div>
+                    <div class="inputet">
+                        <input type="radio" id="femre" name="gjinia" value="Femër" required>
+                        <label for="femre">Female</label>
+                    </div>
+                </div>
+
+                <div class="horizont">
+                    <div class="labelat">
+                        <label for="vleresimi">Rating:</label>
+                    </div>
+                    <div class="inputet">
+                        <input type="number" id="vleresimi" min="1" max="10" required>
+                        <button type="button" onclick="shtoVotim()">Vote</button>
+                    </div>
+                </div>
+            </div>    
+        <hr />
+    </form>
+        <p id="rezultati"></p>
+    <script src="spiro.js"></script>
+</body>
+</html>
